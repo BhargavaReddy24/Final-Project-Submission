@@ -1,0 +1,18 @@
+SQL Test Queries:
+
+SELECT id, name, age FROM students;
+SELECT name, teacher FROM courses;
+INSERT INTO orders (customer_id, product_id, quantity) VALUES (1, 2, 5);
+INSERT INTO users (name, age) VALUES ("John O'Brien", 28);
+INSERT INTO students (id, name, age) VALUES (4, "Dave", 22);
+UPDATE products SET price=25 WHERE id=1;
+UPDATE students SET age = 21 WHERE name = "Alice";
+DELETE FROM orders WHERE id=3;
+DELETE FROM enrollments WHERE grade = "C";
+INSERT INTO table1 (column1, column2, column3) VALUES (1, "value1", "value2");
+UPDATE table1 SET column1 = 2 WHERE column2 = "value";
+DELETE FROM table1 WHERE column1 = 3;
+ALTER TABLE table1 ADD column4 INT;
+DROP TABLE table1;
+TRANSACTION BEGIN;
+TRANSACTION COMMIT;
